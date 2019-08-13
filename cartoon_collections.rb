@@ -24,5 +24,11 @@ def find_the_cheese(food_menu)
       i += 1
     end
   end
-  #return false if nil
+end
+
+#a better, simpler manner
+#we are going to find the menu_item that includes a cheese_types
+#can also switch food_menu and cheese_types
+food_menu.find do |menu_item|
+  cheese_types.include?(menu_item)
 end
